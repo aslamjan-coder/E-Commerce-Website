@@ -1,0 +1,271 @@
+.category-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* ─── Top Section ─────────────────────────────── */
+.top-section {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  height: 300px;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+.sidebar-item {
+  font-size: 13px;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background 0.3s;
+}
+.sidebar-item.active,
+.sidebar-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* Center Banner */
+.center-banner {
+  width: 55%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #eef2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-text {
+  position: absolute;
+  top: 20%;
+  left: 20px;
+  z-index: 2;
+  color: #222;
+}
+.banner-text p {
+  margin: 0;
+  font-size: 14px;
+}
+.banner-text h2 {
+  margin: 5px 0;
+}
+.banner-text button {
+  padding: 8px 14px;
+  margin-top: 10px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Panel */
+.right-panel {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.user-card {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+.btn-blue {
+  background-color: #007bff;
+  color: white;
+  margin: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-light {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 6px 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.promo-box {
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.orange {
+  background-color: #ff6600;
+}
+.teal {
+  background-color: #008080;
+}
+
+/* ─── Bottom Deals Section ───────────────────── */
+.bottom-deals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Left Info Card */
+.deals-left {
+  flex: 1;
+  min-width: 220px;
+  background-color: #fff3e0;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+.deals-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.deals-sub {
+  font-size: 14px;
+  color: gray;
+}
+.deal-timer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.deal-timer div {
+  background: #333;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+.deal-timer span {
+  display: block;
+  font-size: 10px;
+}
+
+/* ─── Products Card Section ───────────────────── */
+.deal-items-vertical {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* ─── Deal Card (Grid View) ───────────────────── */
+.deal-card {
+  flex: 1 1 140px;
+  max-width: 160px;
+  min-width: 140px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 280px;
+  position: relative;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.deal-card img {
+  width: auto;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.deal-card h3 {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #333;
+}
+
+.deal-card p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.add-to-cart-btn {
+  margin-top: auto;
+  padding: 6px 10px;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1c64d1;
+}
+
+/* ─── List View ──────────────────────────────── */
+.deal-card.list {
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  min-width: 100%;
+  gap: 12px;
+  padding: 10px;
+  height: auto;
+}
+
+.deal-card.list img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.deal-card.list h3,
+.deal-card.list p,
+.deal-card.list .discount {
+  margin: 0;
+  text-align: left;
+}
+
+.deal-card.list .add-to-cart-btn {
+  width: auto;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-left: auto;
+}

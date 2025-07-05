@@ -1,0 +1,35 @@
+/* GLOBAL STYLES */
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+button {
+  font-family: inherit;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* COMMON BUTTON STYLES */
+.search-button,
+.btn-blue,
+.btn-light {
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

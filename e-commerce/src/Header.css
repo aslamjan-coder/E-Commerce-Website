@@ -1,0 +1,153 @@
+/* Header.css */
+.header-container {
+  position: fixed; /* Makes header stick to top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures header stays above other content */
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Add this to your App.css to prevent content from hiding behind header */
+.app {
+  padding-top: 80px; /* Should match your header height */
+}
+
+/* Rest of your existing Header CSS remains the same */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.search-container {
+  display: flex;
+  flex-grow: 1;
+  max-width: 500px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.search-container:hover {
+  border-color: #4285f4;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 0 15px;
+  font-size: 14px;
+  outline: none;
+}
+
+.category-dropdown {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: #f8f8f8;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+  gap: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.dropdown-icon {
+  font-size: 12px;
+  color: #777;
+}
+
+.search-button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #3367d6;
+}
+
+/* Navigation Links with stacked layout */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s;
+  gap: 4px;
+}
+
+.nav-icon {
+  font-size: 18px;
+}
+
+.nav-text {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  color: #4285f4;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .top-nav {
+    flex-wrap: wrap;
+  }
+  
+  .search-container {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+  }
+  
+  .nav-icon {
+    font-size: 16px;
+  }
+  
+  .nav-text {
+    font-size: 11px;
+  }
+  
+  .search-button {
+    padding: 0 15px;
+  }
+}
