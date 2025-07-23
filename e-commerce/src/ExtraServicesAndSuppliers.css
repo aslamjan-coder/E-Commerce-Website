@@ -151,3 +151,42 @@
 .supplier-link:hover {
   text-decoration: underline;
 }
+@media (max-width: 767px) {
+  .extra-services-suppliers {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .extra-services {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .extra-services .service-item {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .suppliers {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .suppliers .supplier-logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .suppliers-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

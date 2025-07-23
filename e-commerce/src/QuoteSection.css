@@ -88,3 +88,35 @@
 .send-inquiry-btn:hover {
   background-color: #0b5ed7;
 }
+@media (max-width: 767px) {
+  .quote-section {
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .quote-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .quote-section p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .quote-section .quote-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .quote-section .quote-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 15px;
+  }
+}

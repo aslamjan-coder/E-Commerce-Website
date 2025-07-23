@@ -53,3 +53,56 @@
 .recommended-card.list img {
   width: 90px;
 }
+@media (max-width: 767px) {
+  .recommended-section {
+    padding: 20px 15px;
+  }
+
+  .recommended-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .recommended-products {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .recommended-product-card {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recommended-product-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .recommended-product-card .product-title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .recommended-product-card .product-price {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .recommended-product-card .add-to-cart-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 200px;
+  }
+}
